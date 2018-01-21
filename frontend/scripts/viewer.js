@@ -116,7 +116,13 @@ function answerQuestion(index){
 	/*
 	code here to change the ui
 	*/
-	
+	$( "#answer1-text" ).removeClass( "question-answers-item-wrapper--unanswered" );
+	$( "#answer2-text" ).removeClass( "question-answers-item-wrapper--unanswered" );
+	$( "#answer3-text" ).removeClass( "question-answers-item-wrapper--unanswered" );
+
+
+	$( "#answer" + index + "-text" ).addClass( "question-answers-item-wrapper--chosen" );
+
 	/* 
 	code here to submit answer
 	*/

@@ -59,7 +59,7 @@ body{
   transition: ease 150ms;
 }
 
-.question-answers-item-wrapper--unanswered:hover .question-answers-item--unanswered{
+.question-answers-item-wrapper--unanswered:hover .question-answers-item{
   background-color: #6441a5;
   color: white;
   transition: ease 150ms;
@@ -205,6 +205,12 @@ input, textarea {
 .question-answers-item-wrapper--chosen{
   border-color: #6441a5;
   background: #6441a5;
+}
+
+.question-answers-item-wrapper--chosen .question-answers-item{
+  border-color: #6441a5;
+  background: #6441a5;
+  color: white;
 }
 
 .question-answers-item--correct{
