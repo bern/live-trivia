@@ -1,34 +1,35 @@
 <html>
-        <head>
+  <head>
+    <link rel='stylesheet' href='stylesheets/shared.css'/>
     
-            <link rel='stylesheet' href='stylesheets/shared.css' />
-                
-            <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="scripts/libs/socket.io.2.0.4.js"></script>
-            <script src="scripts/viewer.js" ></script>
-    
-        </head>
-        <body>
-            <div class="question-box">
-                    <div class="question-timer">10</div>
-                    <div class="question-text">
-                      What is the least common pet in the Kyoto region of Japan?
-                    </div>
-                    <div class="question-answers">
-                       <div class="question-answers-item-wrapper">
-                        <div class="result-number"></div>
-                        <div class="question-answers-item" >Cats</div>
-                      </div>
-                      <div class="question-answers-item-wrapper">
-                        <div class="result-number"></div>
-                        <div class="question-answers-item" >Dogs</div>
-                      </div>
-                      <div class="question-answers-item-wrapper question-answers-item-wrapper--chosen">
-                        <div class="result-number"></div>
-                        <div class="question-answers-item question-answers-item--chosen" >Rats</div>
-                      </div>
-                    </div>
-            </div>
-        </body>
-    </html>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/libs/socket.io.2.0.4.js"></script>
+    <script src="scripts/viewer.js" ></script>
+  </head>
+
+  <body>
+    <div class="question-box">
+      <div class="question-timer">10</div>
+      
+      <div class="question-text">
+      What is the least common pet in the Kyoto region of Japan?
+      </div>
+      
+      <div class="question-answers">
+        <div class="question-answers-item-wrapper">
+          <div class="result-number"></div>
+          <div class="question-answers-item" >Cats</div>
+        </div>
+        <div class="question-answers-item-wrapper">
+          <div class="result-number"></div>
+          <div class="question-answers-item" >Dogs</div>
+        </div>
+        <div class="question-answers-item-wrapper question-answers-item-wrapper--chosen">
+          <div class="result-number"></div>
+          <div class="question-answers-item question-answers-item--chosen" >Rats</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
