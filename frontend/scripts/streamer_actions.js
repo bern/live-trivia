@@ -1,7 +1,20 @@
 function askQuestion() {
-    var obj = $('#ask-question').serializeJSON();
-    var jsonString = JSON.stringify(obj);
-    console.log(jsonString)
+
+    var question = {
+        "timer": $('#question-timer').val(),
+        "question": $('#question-text').val(),
+        "answers": [
+            $('#answer1-text').val(),
+            $('#answer2-text').val(),
+            $('#answer3-text').val()
+        ],
+        "correct": $('input[name=correct]:checked').val()
+    }
+
+    console.log(question)
+
+//this works, you just need to send the question json
+
     /*$.ajax({
         type: 'POST',
         url: 'http://791fabb9.ngrok.io/users',

@@ -10,17 +10,17 @@
   </head>
 
   <body class="area">
-      <form class="question-box">
+      <div class="question-box" >
         <label class="creator-input-label creator-input-label--timer" for="timer" > Timer </label>
-        <input name="timer" class="question-timer creator-input--timer" maxlength="2" value=10 ></input>
+        <input name="timer" id="question-timer" class="question-timer creator-input--timer" maxlength="2" value=10 ></input>
         
         <label class="creator-input-label creator-input-label--question" for="question"> Question </label>
-        <textarea name="question" rows="3" class="question-text creator-input creator-input--question" placeholder="Enter your trivia question here..." ></textarea>
+        <textarea id="question-text" name="question" rows="3" class="question-text creator-input creator-input--question" placeholder="Enter your trivia question here..." ></textarea>
       
         <div class="question-answers ">
           <label class="creator-input-label creator-input-label--answer" for="question"> Answers </label>
           <div class="input-radio-wrapper creator-input-radios">
-            <input class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
+            <input id="answer1-text" class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
               <div class="creator-input-radio">
             <input id="answer1"  type="radio" value="1" name="correct" >
               <label for="answer1"><i class="fa fa-check fa-lg white"></i></label>
@@ -28,7 +28,7 @@
         </div>
         
         <div class="input-radio-wrapper creator-input-radios">
-          <input class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
+          <input id="answer2-text" class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
           <div class="creator-input-radio">
             <input id="answer2"  type="radio" value="2" name="correct" >
             <label for="answer2"><i class="fa fa-check fa-lg white"></i></label>
@@ -36,7 +36,7 @@
         </div>
         
         <div class="input-radio-wrapper creator-input-radios">
-          <input class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
+          <input id="answer3-text" class="question-answers-item creator-input creator-input--answer" placeholder="Enter answer here..."/> 
           <div class="creator-input-radio">
             <input id="answer3"  type="radio" value="3" name="correct" >
             <label for="answer3"><i class="fa fa-check fa-lg white"></i></label>
@@ -44,8 +44,8 @@
         </div>
       </div>
       
-      <button class="creator-input--submit" id="ask-question" onclick="askQuestion()">Ask!</button>
-    </form>
+      <button class="creator-input--submit"  onclick="askQuestion()">Ask!</button>
+    </div>
     <script src="https://use.fontawesome.com/9ca6a1193f.js"></script>
 
   </body>
