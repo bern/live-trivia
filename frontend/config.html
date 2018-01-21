@@ -9,9 +9,8 @@
     <script src="scripts/streamer_actions.js"></script>
   </head>
 
-  <body>
-    <div class="area">
-      <div class="question-box">
+  <body class="area">
+      <form class="question-box">
         <label class="creator-input-label creator-input-label--timer" for="timer" > Timer </label>
         <input name="timer" class="question-timer creator-input--timer" maxlength="2" value=10 ></input>
         
@@ -45,7 +44,9 @@
         </div>
       </div>
       
-    <button class="creator-input--submit" id="ask-question" onclick="askQuestion()">Ask!</button>
-    </div>
+      <button class="creator-input--submit" id="ask-question" onclick="askQuestion()">Ask!</button>
+    </form>
+    <script src="https://use.fontawesome.com/9ca6a1193f.js"></script>
+
   </body>
 </html>
