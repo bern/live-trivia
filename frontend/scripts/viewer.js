@@ -105,4 +105,21 @@ $(function() {
 		// console.log(diff);
 	});
 
+
+
+
 });
+
+function answerQuestion(index){
+
+	console.log(index);
+	/*
+	code here to change the ui
+	*/
+	
+	/* 
+	code here to submit answer
+	*/
+
+
+}
