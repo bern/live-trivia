@@ -6,9 +6,9 @@ var fs = require('fs');
 var twitchSockets = require('../custom_modules/twitch_sockets');
 
 function renderFrontend() {
-	fs.writeFileSync('frontend/viewer.html');
-	fs.writeFileSync('frontend/config.html');
-	fs.writeFileSync('frontend/live.html');
+	//fs.writeFileSync('frontend/viewer.html');
+	//fs.writeFileSync('frontend/config.html');
+	//fs.writeFileSync('frontend/live.html');
 }
 
 router.renderFrontend = renderFrontend;
