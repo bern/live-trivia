@@ -1,0 +1,17 @@
+.question-timer{
+    margin: 1rem auto 1rem;
+    padding: .5rem;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    border: .5rem solid #6441a5;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+  }
+  
+  .question-timer--expired{
+    border-color: #f5f5f5;
+    width: 6.5rem;
+    transition: ease 150ms;
+  }
+  

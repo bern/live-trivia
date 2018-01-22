@@ -1,0 +1,25 @@
+.question-box{
+    margin: 0 auto;
+    border-radius: 1rem;
+    background: white;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .question-text{
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+    text-justify: auto;
+    resize: none;
+    height: 100%;
+  }
+  
+  .question-answers{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }

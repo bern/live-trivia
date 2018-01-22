@@ -1,0 +1,28 @@
+.App {
+  
+}
+
+.white{
+  color: white;
+}
+
+html, input, textarea, button{
+  font-family: 'Varela Round', sans-serif;
+}
+
+body{
+  background: grey;
+}
+
+.area{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.result-number{
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+  color: #ccc;
+}

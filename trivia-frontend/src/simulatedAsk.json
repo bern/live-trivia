@@ -1,0 +1,9 @@
+{
+    "timer": 10,
+    "question": "What is the most popular pet in Kyoto, Japan?",
+    "answers": [
+        "Dogs",
+        "Cats",
+        "Hamsters"
+    ]
+}
