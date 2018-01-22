@@ -4,8 +4,18 @@ import React, { Component } from 'react';
 export default class Streamer extends Component {
 
 
+    constructor(props){
+        super(props);
+        this.state = {
+            timer: 10,
+            question: "",
+            answers: ["","",""],
+            correct: -1
+        }
+    }
+
     ask(){
-        console.log("asking question");
+        console.log(this.state);
         /* code to post the question to the server
         to distribute to viewers */
     }
@@ -15,7 +25,7 @@ export default class Streamer extends Component {
             <div>
                  <div className="question-box">
                     <label className="creator-input-label creator-input-label--timer" htmlFor="timer" > Timer </label>
-                    <input name="timer" className="question-timer creator-input--timer" maxLength="2" ></input>
+                    <input name="timer" className="question-timer creator-input--timer" maxLength="2" defaultValue={this.state.timer} onChange={(value) => console.log(value)}/>
                     <label className="creator-input-label creator-input-label--question" htmlFor="question"> Question </label>
                     <textarea name="question" rows="3" className="question-text creator-input creator-input--question" placeholder="Enter your trivia question here..." ></textarea>
                 

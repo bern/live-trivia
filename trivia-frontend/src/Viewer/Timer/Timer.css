@@ -7,6 +7,7 @@
     height: 1.5rem;
     width: 1.5rem;
     text-align: center;
+    overflow: hidden;
   }
   
   .question-timer--expired{
