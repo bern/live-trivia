@@ -2,22 +2,24 @@
 
   
   .creator-input{
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
     border-radius: 2rem;
-    background: white;
+    font-size: 1.25rem;
+    padding: .5rem 1rem !important;
+
   }
   .creator-input--question{
     border: .5rem solid #6441a5;
+    font-size: 1.25rem;
     margin: 0 1rem;
+    background: white;
+    padding: 1rem !important;
   }
   
   .creator-input--answer{
-    border: .5rem solid #f5f5f5;
-    font-size: 1.25rem;
-  
+    border: .5rem solid #f5f5f5;  
     margin-right: 1rem;
     width: 100%;
+    color: black !important;
   }
   
   .creator-input-label{
