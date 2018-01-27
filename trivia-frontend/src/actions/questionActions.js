@@ -4,3 +4,10 @@ export function askQuestion(questionObject){
         payload: questionObject
     };
 }
+
+export function answerQuestion(answerIndex){
+    return{
+        type: "QUESTION_ANSWERED",
+        payload: answerIndex
+    };
+}

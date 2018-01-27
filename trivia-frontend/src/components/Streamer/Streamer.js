@@ -18,6 +18,7 @@ export default class Streamer extends Component {
     ask(){
         console.log(this.state);
         this.props.onAsk(this.state);
+        this.props.changePage();//temporary for nice testing flow
         /* code to post the question to the server
         to distribute to viewers */
     }

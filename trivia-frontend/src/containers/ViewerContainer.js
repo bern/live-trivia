@@ -1,27 +1,27 @@
 import { connect } from 'react-redux';
-import { askQuestion } from '../actions/questionActions';
+import { answerQuestion } from '../actions/questionActions';
 import Viewer from '../components/Viewer/Viewer';
 
 
 const mapStateToProps = state => {
   return {
-    timer: state.triviaQuestion.timer,
-    question: state.triviaQuestion.question,
-    answers: state.triviaQuestion.answers
+    timer: state.question.timer,
+    question: state.question.question,
+    answers: state.question.answers
   }
-}
+};
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAsk: id => {
-      dispatch(askQuestion(id))
+    onAnswer: answer => {
+      dispatch(answerQuestion(answer))
     }
-  }
+  };
 }
 
-const VisibleTodoList = connect(
+const ViewerContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Viewer)
+)(Viewer);
 
 export default ViewerContainer
