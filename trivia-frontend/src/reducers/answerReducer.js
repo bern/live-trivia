@@ -10,7 +10,7 @@ export default function reducer(state={
             return{
                 ...state,
                 correct: action.payload.correct,
-                answers: actions.payload.answers,
+                answers: action.payload.answers,
                 revealed: true //this is mostly for the testing
             };
         };
