@@ -7,7 +7,9 @@ const mapStateToProps = state => {
   return {
     timer: state.question.timer,
     question: state.question.question,
-    answers: state.question.answers
+    answers: state.question.answers,
+    correct: state.answer.correct,
+    revealed: state.answer.revealed
   }
 };
 

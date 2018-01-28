@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import questionReducer from './questionReducer';
 import { routerReducer } from 'react-router-redux';
+import questionReducer from './questionReducer';
+import answerReducer from './answerReducer';
 
 export default combineReducers({
-    question:questionReducer,
+    question: questionReducer,
+    answer: answerReducer,
     router: routerReducer
 });
